@@ -1,5 +1,5 @@
 class ZebraController < ApplicationController
   def giraffe
-    render({ :plain => "howdy" })
+    render({ :template => "game_templates/play_rock" })
   end
 end
