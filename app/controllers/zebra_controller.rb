@@ -29,7 +29,7 @@ class ZebraController < ApplicationController
     render({ :template => "game_templates/play_paper" })
   end
 
-  def scissor
+  def scissors
     moves = ["rock", "paper", "scissors"]
 
     @comp_move = moves.sample
@@ -41,7 +41,7 @@ class ZebraController < ApplicationController
     else
       @outcome = "tied"
     end
-    render({ :template => "game_templates/play_scissor" })
+    render({ :template => "game_templates/play_scissors" })
   end
 
   def rules
